@@ -2,3 +2,5 @@ fastapi
 pydantic
 pylint
 black
+pytest
+pytest-coverage
