@@ -1,6 +1,10 @@
 from pydantic import BaseModel, Field
 from typing import Optional
 
+class  Combo(BaseModel):
+    combo:str
+    damage: int 
+    phrase:str
 
 class Player(BaseModel):
     name: str
@@ -15,6 +19,7 @@ class Player(BaseModel):
 
 class TonynStallone(Player):
     name: str = "Tonyn Stallone"
+    #combo1:Combo = Combo(combo="PDSD", damage= 3, phrase="usa un Taladoken")
     combo1: tuple[str, int, str] = ["PDSD", 3, "usa un Taladoken"]
     combo2: tuple[str, int, str] = ["KDS", 2, "conecta un Remuyuken"]
     combo3: tuple[str, int, str] = ["P", 1, "da un puñetazo"]

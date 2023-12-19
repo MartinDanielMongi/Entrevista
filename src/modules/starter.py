@@ -30,9 +30,4 @@ def calculate_first_to_play(pla1: Player, pla2: Player):
         if total_movements_1 < total_movements_2:
             return pla1
         else:
-            if total_hits_1 > total_hits_2:
-                return pla2
-            if total_hits_1 < total_hits_2:
-                return pla1
-            else:
-                return pla1
+            return pla1
