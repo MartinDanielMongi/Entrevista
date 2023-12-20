@@ -5,16 +5,6 @@
 Este repositorio esta preparado para la resolucion de la entrevista tecnica propuesta por ___ para un puesto como Software Support Engineer.
 Se puede encontrar las condiciones de la entrevista en "Consigna.docx" (nota 1)
 
-<!-- ## Docker
-
-Descarga la imagen
-
-    docker pull ezemarcel/talana_app:latest
-
-Ahora corre la imagen
-
-    docker run --name talana --rm -p 8000:80 ezemarcel/talana_app -->
-
 ## Instalación
 
 Clone el repositorio: 
@@ -70,11 +60,8 @@ respuesta esperada:
 
 Para correr los tests de esta aplicacion se recomienda usar el siguiente comando 
 
-    pytest --cov --cov-config=.coveragerc --cov-report=html
+    pytest --cov=src --cov-config=.coveragerc --cov-report=html
 
-o
-
-    make test
 
 puede abrir el archivo **htmlcov/index.html** para ver el coverage generado de los tests
 
